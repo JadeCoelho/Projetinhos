@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    font-weight: normal;
+  
+}
+
+:root{
+    --principal:#E93B81;
+    --hover:hsl(336, 75%, 65%);
+    --body:#15151d;
+    --container:#2d2e378d;
+    --texto:#fcfeff;
+    --simbolos: #d0d0d0;
+}
+
+body {
+    background: var(--body);
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    outline: none;
+}
+
+header {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background: var(--body);
+    position: relative;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--texto);
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--principal);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.busca {
+    display: flex;
+    flex-direction: row;
+}
+
+.busca input{
+    padding: 20px;
+    width: 400px;
+    height: 53px;
+    outline: none;
+    border: none;
+}
+
+.busca .bx {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    background: var(--texto);
+    margin-left: -5px;
+    cursor: pointer;
+}
+.busca .bx:hover{
+    color: var(--texto);
+}
+.login{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.login button {
+    padding: 10px;
+    width: 140px;
+    height: 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+button:hover {
+    color: var(--texto);
+    background: var(--principal);
+}
+
+.tema{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+    background: var(--principal);
+    cursor: pointer;
+}
+.tema:hover {
+    background: var(--hover);
+}
+.tema i {
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--texto);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0;
+    background: var(--container);
+    position: relative;
+    width: 100%;
+    top: 0;
+
+}
+.menu i {
+   margin-right: 10px;
+}
+.menu a {
+    padding: 0 40px;
+    color: var(--simbolos);
+}
+.cadastrar {
+    background-color: var(--principal);
+    color: var(--texto);
+}
+.login button:hover {
+    background-color: var(--hover);
+}
+.menu a:hover {
+    color: var(--texto);
+}
+
+.container {
+    background-color: #d0d0d0;
+    position: relative;
+    top: 0;
+}
+.categoria {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    padding: 20px;
+    background-color: var(--container);
+    position: relative;
+    /*left: -300px;*/
+    float: left;
+
+}
+.categoria a {
+    text-transform: uppercase;
+    color: var(--simbolos);
+}
+.categoria a:hover {
+    color: var(--texto);
+}
+.categoria h2 {
+    border-bottom: 1px solid var(--principal);
+    padding-bottom: 5px;
+    color: var(--simbolos);
+    margin-bottom: 30px;
+}
+.ativo{
+    position: relative;
+    left: 0;
+}
+.btn {
+    background-color: var(--simbolos);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 137px;
+   /* left: 200px;*/
+   transform: translateX(200px);
+   cursor: pointer;
+}
+.btn i {
+    color: var(--body);
+    font-size: 20px;
+}

@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    font-weight: normal;
+}
+
+:root{
+    --principal:#E93B81;
+    --hover:hsl(336, 75%, 65%);
+    --body:#15151d;
+    --container:#2d2e378d;
+    --texto:#fcfeff;
+    --simbolos: #d0d0d0;
+}
+body {
+    background: var(--body);
+}
+.logo span {
+    color: var(--principal);
+}
+a{
+    text-decoration: none;
+    color: var(--simbolos);
+}
+
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+section{
+padding: 3rem 0 2rem;
+}
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+.ler{
+    color: var(--simbolos);
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+}
+.ler .bx{
+    font-size: 21px;
+    background: var(--principal);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-left: 10px;
+}
+
+.ler .bx:hover{
+    background: var(--hover);
+}   
+
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    border-bottom: 0.5px solid var(--principal);
+    margin-bottom: 2rem ;
+
+}
+.heading-titulo{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.manga-caixa{
+    position: relative;
+    width: 90%;
+    height: 280px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.manga-caixa-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.caixa-texto{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.444);
+    overflow: hidden;
+}
+.manga-titulo{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.genero{
+    font-size: 0.938rem;
+    font-weight: 500;
+    color: var(--texto);
+    background-color: var(--principal);
+    padding: 2px 6px;
+
+}
+.swiper-btn{
+    display: flex;
+}
+.swiper-button-next,.swiper-button-prev{
+    position: static !important;
+    margin: 0 0 0 10px !important;
+}
+.swiper-button-next::after,.swiper-button-prev::after{
+    color: var(--simbolos);
+    font-size: 18px !important;
+    font-weight: 700;
+}
+
+.mangas .heading{
+    padding: 10px 6px;
+}
+.mangas-conteudo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    row-gap: 1.5rem;
+}
+.mangas-conteudo .manga-caixa:hover .manga-caixa-img{
+    transform: scale(1.1);
+    transform: 1s ease;
+}
+
+.menu-top{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding: 25px 55px;
+    background: var(--body);
+    
+}
+.logo{
+    position: relative;
+    display: flex;
+    float: left;
+    font-size: 35px;
+    color: var(--texto);
+}
+#login{
+    position: relative;
+    display: flex;
+    float: right;
+}
+.login {
+    margin-left: 10px;
+    padding: 4px 20px;
+    background: var(--principal);
+    color: var(--texto);
+}
+#busca{
+    width: 400px;
+    padding: 6px 16px;
+    background: var(--texto);
+    color: #1e1e2a;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.375);
+    z-index: 5;
+}
+.menu-left,.categorias{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: flex-start;
+}
+#menu {
+    position: relative;
+    float: left;
+    width: 200px;
+    padding-left: 25px;
+   
+}
+.menu-left{
+    margin-top: 58px;
+    margin-bottom: 100px;
+}
+.bx {
+    margin-right: 5px;
+}
+.busca {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.lupa {
+    background: var(--texto);
+    border-radius: 100px;
+    width: 100px;
+    margin-left: -55px;
+   
+}
+.lupa i {
+    font-size: 22px;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+    margin-right: 12px;
+    float: right;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--simbolos);
+}
+input,button{
+    border-radius: 40px;
+}
+
+#menu a:hover {
+    color: var(--texto);
+}
+
+button:hover {
+    color: var(--texto);
+    background: var(--hover);
+
+}
+.fav {
+    color: var(--simbolos);
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+}
+.fav:hover {
+    color: var(--texto);
+    transform: scale(1.1);
+}
+.pagina-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+.next{
+    background: var(--principal);
+    padding: 16px 20px;
+    color: var(--texto);
+    font-weight: normal;
+    border-radius: 40px;
+    
+}
+.next:hover{
+    background: var(--hover);
+    transition: 0.3s all linear;
+}
+
+.swiper-slide .manga-caixa{
+    width: 200px;
+}
+.swiper-slide{
+    margin: 0;
+    padding: 0;
+}

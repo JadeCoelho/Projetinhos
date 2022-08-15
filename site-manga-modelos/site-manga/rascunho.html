@@ -1,0 +1,128 @@
+<section id="mangas">
+    <nav class="categoria">
+        <h2>Categorias</h2>
+        <a href="" class="categ">Ação</a>
+        <a href="" class="categ">Aventura</a>
+        <a href="" class="categ">Científico</a>
+        <a href="" class="categ">Comédia</a>
+        <a href="" class="categ">Drama</a>
+        <a href="" class="categ">Esporte</a>
+        <a href="" class="categ">Fantasia</a>
+        <a href="" class="categ">Gastronomia</a>
+        <a href="" class="categ">Magia</a>
+        <a href="" class="categ">Mistério</a>
+        <a href="" class="categ">Psicológico</a>
+        <a href="" class="categ">Romance</a>
+        <a href="" class="categ">Supernatural</a>
+        <a href="" class="categ">Tragédia</a>
+    </nav>
+    <div class="btn"><i class='bx bxs-chevrons-left'></i></div>
+
+    <div class="todos">
+        <h2>Todos os mangás</h2>
+        <div class="caixa-manga">
+            <img src="cartaz1.jpg" alt="">
+        </div>
+        <div class="caixa-manga">
+            <img src="cartaz1.jpg" alt="">
+        </div>
+        <div class="caixa-manga">
+            <img src="cartaz1.jpg" alt="">
+        </div>
+        <div class="caixa-manga">
+            <img src="cartaz1.jpg" alt="">
+        </div>
+        <div class="caixa-manga">
+            <img src="cartaz1.jpg" alt="">
+        </div>
+        <div class="caixa-manga">
+            <img src="cartaz1.jpg" alt="">
+        </div>
+        <div class="caixa-manga">
+            <img src="cartaz1.jpg" alt="">
+        </div>
+        <div class="caixa-manga">
+            <img src="cartaz1.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    padding: 20px;
+    background-color: var(--container);
+    position: relative;
+    /*left: -300px;*/
+    float: left;
+
+}
+.categoria a {
+    text-transform: uppercase;
+    color: var(--simbolos);
+}
+.categoria a:hover {
+    color: var(--texto);
+}
+.categoria h2 {
+    border-bottom: 1px solid var(--principal);
+    padding-bottom: 5px;
+    color: var(--simbolos);
+    margin-bottom: 30px;
+}
+.ativo{
+    position: relative;
+    left: 0;
+}
+.btn {
+    background-color: var(--simbolos);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 137px;
+   /* left: 200px;*/
+   transform: translateX(200px);
+   cursor: pointer;
+}
+.btn i {
+    color: var(--body);
+    font-size: 20px;
+}
+
+#mangas {
+    background-color: var(--texto);
+    width: 100%;
+    position: relative;
+    
+}
+.todos {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: right;
+    width: 1000px;
+    background-color: #d0d0d0;
+    right: 200px;
+}
+img {
+    width: 170px;
+}
+.caixa-manga {
+    border: 1px solid black;
+    padding: 20px;
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    background-color: #d0d0d0;
+}
+.todos h2 {
+    display: block;
+}

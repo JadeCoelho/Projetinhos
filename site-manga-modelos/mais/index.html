@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangável</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mangá<span>vel</span></h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="">Home</a>
+                <a href="">Todos</a>
+                <a href="">Favoritos</a>
+            </nav>
+        </div>
+        <div class="busca">
+            <input type="text"><button type="submit"><i class='bx bx-search' ></i></button>
+        </div>
+        <div class="tema">
+            <i class='bx bx-moon'></i>
+        </div>
+    </header>
+    <section id="pop">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://cdn.wallpapersafari.com/14/49/IuBoT2.png" alt=""></div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <section id="recentes">
+        <h2 class="titulo">Mais recentes</h2>
+        <div class="recentes-container">
+            <div class="cx-recente">
+                <img src="https://neoxscans.net/wp-content/uploads/2022/05/Ranker-Return-scaled-e1653005253625.jpg" alt="">
+                <div class="info">
+                    <h2>alguma coisa</h2>
+                    <div class="info2">
+                        <p>Ação</p>
+                        <p>2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cx-recente">
+                <img src="https://neoxscans.net/wp-content/uploads/2022/05/Ranker-Return-scaled-e1653005253625.jpg" alt="">
+                <div class="info">
+                    <h2>alguma coisa</h2>
+                    <div class="info2">
+                        <p>Ação</p>
+                        <p>2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cx-recente">
+                <img src="https://neoxscans.net/wp-content/uploads/2022/05/Ranker-Return-scaled-e1653005253625.jpg" alt="">
+                <div class="info">
+                    <h2>alguma coisa</h2>
+                    <div class="info2">
+                        <p>Ação</p>
+                        <p>2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cx-recente">
+                <img src="https://neoxscans.net/wp-content/uploads/2022/05/Ranker-Return-scaled-e1653005253625.jpg" alt="">
+                <div class="info">
+                    <h2>alguma coisa</h2>
+                    <div class="info2">
+                        <p>Ação</p>
+                        <p>2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cx-recente">
+                <img src="https://neoxscans.net/wp-content/uploads/2022/05/Ranker-Return-scaled-e1653005253625.jpg" alt="">
+                <div class="info">
+                    <h2>alguma coisa</h2>
+                    <div class="info2">
+                        <p>Ação</p>
+                        <p>2021</p>
+                    </div>
+                </div>
+            </div>
+             <div class="cx-recente">
+                <img src="https://neoxscans.net/wp-content/uploads/2022/05/Ranker-Return-scaled-e1653005253625.jpg" alt="">
+                <div class="info">
+                    <h2>alguma coisa</h2>
+                    <div class="info2">
+                        <p>Ação</p>
+                        <p>2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="todos">
+
+        <div class="categorias">
+            <p>Pesquise por categoria</p>
+            <ul>
+                <li class="categ"><a href="">Ação</a></li>
+                <li class="categ"><a href="">Aventura</a></li>
+                <li class="categ"><a href="">Científico</a></li>
+                <li class="categ"><a href="">Comédia</a></li>
+                <li class="categ"><a href="">Culinária</a></li>
+                <li class="categ"><a href="">Drama</a></li>
+                <li class="categ"><a href="">Esporte</a></li>
+                <li class="categ"><a href="">Fantasia</a></li>
+                <li class="categ"><a href="">Magia</a></li>
+                <li class="categ"><a href="">Mistério</a></li>
+                <li class="categ"><a href="">Psicológico</a></li>
+                <li class="categ"><a href="">Romance</a></li>
+                <li class="categ"><a href="">Sobrenatural</a></li>
+                <li class="categ"><a href="">Tragédia</a></li>
+            </ul>
+        </div>
+        
+
+        <div class="lista-mangas">
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+            <div class="manga">
+                <div class="img-manga">
+                    <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                </div>
+
+                <div class="titulo-manga">
+                    <h2>Ranker's Return</h2>
+                </div>
+
+                <div class="info-manga">
+                    <p class="categoria">Aventura</p>
+                    <p class="ano">2021</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="mais">Ver mais</button>
+
+       
+        
+    </section>
+    <div class="populares">
+        <h2>Mais populares</h2>
+        <ul>
+            <li>
+                <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                <div class="info-pop">
+                    <h2>scdvdvdv</h2>
+                    <p>Gêneros: </p><span>Ação</span><span>Mistério</span>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                <div class="info-pop">
+                    <h2>scdvdvdv</h2>
+                    <p>Gêneros: </p><span>Ação</span><span>Mistério</span>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                <div class="info-pop">
+                    <h2>scdvdvdv</h2>
+                    <p>Gêneros: </p><span>Ação</span><span>Mistério</span>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                <div class="info-pop">
+                    <h2>scdvdvdv</h2>
+                    <p>Gêneros: </p><span>Ação</span><span>Mistério</span>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                <div class="info-pop">
+                    <h2>scdvdvdv</h2>
+                    <p>Gêneros: </p><span>Ação</span><span>Mistério</span>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                <div class="info-pop">
+                    <h2>scdvdvdv</h2>
+                    <p>Gêneros: </p><span>Ação</span><span>Mistério</span>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="https://d1ed0vta5mrb00.cloudfront.net/comics/413/thumbnails/9e2dd0ec-0260-4481-bf48-af8df9ead223.jpg" alt="">
+                <div class="info-pop">
+                    <h2>scdvdvdv</h2>
+                    <p>Gêneros: </p><span>Ação</span><span>Mistério</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

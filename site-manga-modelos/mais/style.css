@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+:root {
+    --principal: rgb(174, 41, 88);
+    --bg: rgb(23, 9, 38); 
+    --claro: rgb(218, 218, 218);
+    --bg2:rgba(23, 9, 38, 0.604); 
+    --fundo: rgb(9, 7, 10); 
+    --linha:rgb(38, 15, 63); 
+}
+body{
+    background-color: var(--fundo);
+}
+header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+ul {
+    list-style: none;
+}
+header .logo h1{
+    color: white;
+}
+header .logo span {
+    color: var(--principal);
+}
+
+.menu nav a {
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.busca input {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 15px;
+}
+.busca button {
+    position: relative;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+}
+
+.tema {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#pop {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .swiper-button-next{
+    margin-right: 100px;
+  }
+  .swiper-button-prev{
+    margin-left: 100px;
+  }
+ 
+
+  .recentes-container {
+    margin-top: 200px;
+    width: 80%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 30px;
+    background-color: var(--bg2);
+    margin: auto;
+    padding: 30px;
+    color: white;
+  }
+
+  .cx-recente {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    width: 100%;
+  }
+  .cx-recente img {
+    position: relative;
+    width: 100%;
+  }
+
+  #recentes .titulo{
+    background-color: var(--linha);
+    width: 200px;
+    position: relative;
+    left: 10%;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+  }
+
+  #todos {
+    width: 900px;
+    color: white;
+    float: left;
+    position: relative;
+    background-color: var(--linha);
+    left: 10%;
+    margin-top: 100px;
+    padding: 0 15px;
+    
+}
+
+.manga{
+    width: 150px;
+}
+.img-manga {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.img-manga:hover  {
+    opacity: 1;
+  
+}
+
+.lista-mangas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 30px;
+    position: relative;
+    width: 100%;
+}
+
+#todos img {
+    width: 100%;
+}
+.titulo-manga h2{
+    font-size: 16px;
+}
+
+.info-manga{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-between;
+}
+.info-manga .categoria {
+    position: relative;
+    left: 0;
+}
+.info-manga .ano{
+   margin-left: 5px;
+   display: flex;
+}
+.titulo {
+    padding: 25px 100px 0px 100px;
+    margin-bottom: 5px;
+}
+.titulo h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+.categorias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    background-color: var(--bg);
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+.categorias p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: var(--claro);
+}
+
+.categorias ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.categorias ul li {
+    margin-right: 30px;
+}
+.categorias ul li a {
+    color: white;
+}
+.categorias ul li a:hover {
+    color: var(--principal);
+}
+
+.mais {
+    position: relative;
+    left: 45%;
+    margin: 30px;
+    padding: 12px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: var(--principal);
+    color: white;
+    border: none;
+}
+
+.mais:hover{
+    color: white;
+    background-color: var(--linha);
+}
+
+.populares {
+    position: relative;
+    float: right;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    right: 10%;
+    margin-top: 7%;
+    gap: 15px;
+    padding-left: 20px;
+    padding-top:20px;
+    color: white;
+}
+.populares img{
+    width: 100px;
+}
+.populares ul li{
+    display: flex;
+    flex-direction: row;
+}
+.populares .info-pop{
+    position: relative;
+    left: 10px;
+}
+
+.ler-manga{
+    width: 100%;
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ler-cx{
+    background-color: var(--bg2);
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ler-img img{
+    width: 100%;
+}
+.ler-info{
+    position: relative;
+    left: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.ler-info .txt{
+    text-align: justify;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.ler-detalhes span {
+    margin-left: 30px;
+    color: var(--claro);
+    cursor: pointer;
+}
+.ler-detalhes span:hover{
+    color: var(--principal);
+}
+.nota i {
+    color: rgb(255, 215, 57);
+    margin-right: 5px;
+}
+.ler-manga{
+    color: white;
+}
+.sinopse{
+    background-color: var(--linha);
+    width: 65px;
+    padding: 3px 6px;
+    text-align: center;
+}
+.capitulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.capitulos ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.capitulos ul li {
+
+}
+.capitulos ul li a {
+    text-decoration: none;
+    margin-left: 35px;
+
+}
